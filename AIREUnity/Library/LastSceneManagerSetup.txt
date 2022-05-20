@@ -1,0 +1,5 @@
+sceneSetups:
+- path: Assets/BluetoothAPI/Scenes/scan_scene.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0

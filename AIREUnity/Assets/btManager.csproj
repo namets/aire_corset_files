@@ -1,0 +1,241 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{1189DE0E-F2B8-4D1D-9A58-9A1A8E7922B2}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>btManager</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MongoDB.Bson, Version=2.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\MongoDB.Bson.2.7.0\lib\net45\MongoDB.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="BluetoothAPI.meta" />
+    <None Include="BluetoothAPI\Arduino Unity Plugin.pdf" />
+    <None Include="BluetoothAPI\Arduino Unity Plugin.pdf.meta" />
+    <None Include="BluetoothAPI\changelogs.txt.meta" />
+    <None Include="BluetoothAPI\help.txt.meta" />
+    <None Include="BluetoothAPI\Materials.meta" />
+    <None Include="BluetoothAPI\Materials\Black.mat" />
+    <None Include="BluetoothAPI\Materials\Black.mat.meta" />
+    <None Include="BluetoothAPI\Materials\DarkRed.mat" />
+    <None Include="BluetoothAPI\Materials\DarkRed.mat.meta" />
+    <None Include="BluetoothAPI\Materials\Red.mat" />
+    <None Include="BluetoothAPI\Materials\Red.mat.meta" />
+    <None Include="BluetoothAPI\readme.txt.meta" />
+    <None Include="BluetoothAPI\Samples.meta" />
+    <None Include="BluetoothAPI\Samples\2 Scenes.meta" />
+    <None Include="BluetoothAPI\Samples\2 Scenes\Scene 1.unity" />
+    <None Include="BluetoothAPI\Samples\2 Scenes\Scene 1.unity.meta" />
+    <None Include="BluetoothAPI\Samples\2 Scenes\Scene 2.unity" />
+    <None Include="BluetoothAPI\Samples\2 Scenes\Scene 2.unity.meta" />
+    <None Include="BluetoothAPI\Samples\2 Scenes\Scene1.cs.meta" />
+    <None Include="BluetoothAPI\Samples\2 Scenes\Scene2.cs.meta" />
+    <None Include="BluetoothAPI\Samples\BLE.meta" />
+    <None Include="BluetoothAPI\Samples\BLE\BLE.cs.meta" />
+    <None Include="BluetoothAPI\Samples\BLE\BLE.unity" />
+    <None Include="BluetoothAPI\Samples\BLE\BLE.unity.meta" />
+    <None Include="BluetoothAPI\Samples\BLE\characteristic.js.txt.meta" />
+    <None Include="BluetoothAPI\Samples\BLE\main.js.txt.meta" />
+    <None Include="BluetoothAPI\Samples\BLE\readme.md" />
+    <None Include="BluetoothAPI\Samples\BLE\readme.md.meta" />
+    <None Include="BluetoothAPI\Samples\Led On Off.meta" />
+    <None Include="BluetoothAPI\Samples\Led On Off\LedOnOff.ino" />
+    <None Include="BluetoothAPI\Samples\Led On Off\LedOnOff.ino.meta" />
+    <None Include="BluetoothAPI\Samples\Led On Off\LedOnOff.unity" />
+    <None Include="BluetoothAPI\Samples\Led On Off\LedOnOff.unity.meta" />
+    <None Include="BluetoothAPI\Samples\Led On Off\LedOnOffManager.cs.meta" />
+    <None Include="BluetoothAPI\Samples\Led On Off\readme.txt.meta" />
+    <None Include="BluetoothAPI\Samples\Scan and Connect.meta" />
+    <None Include="BluetoothAPI\Samples\Scan and Connect\basic.ino" />
+    <None Include="BluetoothAPI\Samples\Scan and Connect\basic.ino.meta" />
+    <None Include="BluetoothAPI\Samples\Scan and Connect\Scan and Connect.unity" />
+    <None Include="BluetoothAPI\Samples\Scan and Connect\Scan and Connect.unity.meta" />
+    <None Include="BluetoothAPI\Samples\Scan and Connect\ScanAndConnect.cs.meta" />
+    <None Include="BluetoothAPI\Scenes.meta" />
+    <None Include="BluetoothAPI\Scenes\ble_services.unity" />
+    <None Include="BluetoothAPI\Scenes\ble_services.unity.meta" />
+    <None Include="BluetoothAPI\Scenes\demo.unity" />
+    <None Include="BluetoothAPI\Scenes\demo.unity.meta" />
+    <None Include="BluetoothAPI\Scenes\main.unity" />
+    <None Include="BluetoothAPI\Scenes\main.unity.meta" />
+    <None Include="BluetoothAPI\Scenes\main2.ino" />
+    <None Include="BluetoothAPI\Scenes\main2.ino.meta" />
+    <None Include="BluetoothAPI\Scenes\main2.unity" />
+    <None Include="BluetoothAPI\Scenes\main2.unity.meta" />
+    <None Include="BluetoothAPI\Scenes\scan_scene.unity" />
+    <None Include="BluetoothAPI\Scenes\scan_scene.unity.meta" />
+    <None Include="BluetoothAPI\Scenes\scan_scene2.unity" />
+    <None Include="BluetoothAPI\Scenes\scan_scene2.unity.meta" />
+    <None Include="BluetoothAPI\Scripts.meta" />
+    <None Include="BluetoothAPI\Scripts\arduino_char_terminator.ino" />
+    <None Include="BluetoothAPI\Scripts\arduino_char_terminator.ino.meta" />
+    <None Include="BluetoothAPI\Scripts\arduino_length_based_mode.ino" />
+    <None Include="BluetoothAPI\Scripts\arduino_length_based_mode.ino.meta" />
+    <None Include="BluetoothAPI\Scripts\basic.ino" />
+    <None Include="BluetoothAPI\Scripts\basic.ino.meta" />
+    <None Include="BluetoothAPI\Scripts\BLEServicesManager.cs.meta" />
+    <None Include="BluetoothAPI\Scripts\BTManager.cs.meta" />
+    <None Include="BluetoothAPI\Scripts\Demo.cs.meta" />
+    <None Include="BluetoothAPI\Scripts\LedOnOff.cs.meta" />
+    <None Include="BluetoothAPI\Scripts\led_on_off.ino" />
+    <None Include="BluetoothAPI\Scripts\led_on_off.ino.meta" />
+    <None Include="BluetoothAPI\Scripts\manager.cs.meta" />
+    <None Include="BluetoothAPI\Scripts\MyStreamManager.cs.meta" />
+    <None Include="BluetoothAPI\Scripts\ScanScene2.cs.meta" />
+    <None Include="BluetoothAPI\Scripts\ScanSceneManager.cs.meta" />
+    <None Include="BluetoothAPI\Scripts\SphereContRot.cs.meta" />
+    <None Include="BluetoothAPI\wiring.png.meta" />
+    <None Include="btManager.cs.meta" />
+    <None Include="packages.config" />
+    <None Include="Plugins.meta" />
+    <None Include="Plugins\Android.meta" />
+    <None Include="Plugins\Android\AndroidManifest.xml.meta" />
+    <None Include="Plugins\Android\ArduinoBluetoothAPI.dll.meta" />
+    <None Include="Plugins\Android\classes.jar.meta" />
+    <None Include="Plugins\ArduinoBluetoothAPI.dll.meta" />
+    <None Include="Plugins\BluetoothUnityAPI.bundle.meta" />
+    <None Include="Plugins\BluetoothUnityAPI.bundle\Contents.meta" />
+    <None Include="Plugins\BluetoothUnityAPI.bundle\Contents\Frameworks.meta" />
+    <None Include="Plugins\BluetoothUnityAPI.bundle\Contents\Frameworks\libswiftCore.dylib" />
+    <None Include="Plugins\BluetoothUnityAPI.bundle\Contents\Frameworks\libswiftCore.dylib.meta" />
+    <None Include="Plugins\BluetoothUnityAPI.bundle\Contents\Frameworks\libswiftCoreAudio.dylib" />
+    <None Include="Plugins\BluetoothUnityAPI.bundle\Contents\Frameworks\libswiftCoreAudio.dylib.meta" />
+    <None Include="Plugins\BluetoothUnityAPI.bundle\Contents\Frameworks\libswiftCoreFoundation.dylib" />
+    <None Include="Plugins\BluetoothUnityAPI.bundle\Contents\Frameworks\libswiftCoreFoundation.dylib.meta" />
+    <None Include="Plugins\BluetoothUnityAPI.bundle\Contents\Frameworks\libswiftCoreGraphics.dylib" />
+    <None Include="Plugins\BluetoothUnityAPI.bundle\Contents\Frameworks\libswiftCoreGraphics.dylib.meta" />
+    <None Include="Plugins\BluetoothUnityAPI.bundle\Contents\Frameworks\libswiftDarwin.dylib" />
+    <None Include="Plugins\BluetoothUnityAPI.bundle\Contents\Frameworks\libswiftDarwin.dylib.meta" />
+    <None Include="Plugins\BluetoothUnityAPI.bundle\Contents\Frameworks\libswiftDispatch.dylib" />
+    <None Include="Plugins\BluetoothUnityAPI.bundle\Contents\Frameworks\libswiftDispatch.dylib.meta" />
+    <None Include="Plugins\BluetoothUnityAPI.bundle\Contents\Frameworks\libswiftFoundation.dylib" />
+    <None Include="Plugins\BluetoothUnityAPI.bundle\Contents\Frameworks\libswiftFoundation.dylib.meta" />
+    <None Include="Plugins\BluetoothUnityAPI.bundle\Contents\Frameworks\libswiftIOKit.dylib" />
+    <None Include="Plugins\BluetoothUnityAPI.bundle\Contents\Frameworks\libswiftIOKit.dylib.meta" />
+    <None Include="Plugins\BluetoothUnityAPI.bundle\Contents\Frameworks\libswiftObjectiveC.dylib" />
+    <None Include="Plugins\BluetoothUnityAPI.bundle\Contents\Frameworks\libswiftObjectiveC.dylib.meta" />
+    <None Include="Plugins\BluetoothUnityAPI.bundle\Contents\Frameworks\libswiftXPC.dylib" />
+    <None Include="Plugins\BluetoothUnityAPI.bundle\Contents\Frameworks\libswiftXPC.dylib.meta" />
+    <None Include="Plugins\BluetoothUnityAPI.bundle\Contents\Info.plist" />
+    <None Include="Plugins\BluetoothUnityAPI.bundle\Contents\Info.plist.meta" />
+    <None Include="Plugins\BluetoothUnityAPI.bundle\Contents\MacOS.meta" />
+    <None Include="Plugins\BluetoothUnityAPI.bundle\Contents\MacOS\BluetoothUnityAPI" />
+    <None Include="Plugins\BluetoothUnityAPI.bundle\Contents\MacOS\BluetoothUnityAPI.meta" />
+    <None Include="Plugins\BluetoothUnityAPI.bundle\Contents\_CodeSignature.meta" />
+    <None Include="Plugins\BluetoothUnityAPI.bundle\Contents\_CodeSignature\CodeResources" />
+    <None Include="Plugins\BluetoothUnityAPI.bundle\Contents\_CodeSignature\CodeResources.meta" />
+    <None Include="Plugins\iOS.meta" />
+    <None Include="Plugins\iOS\BluetoothUnityAPI.meta" />
+    <None Include="Plugins\iOS\BluetoothUnityAPI\Editor.meta" />
+    <None Include="Plugins\iOS\BluetoothUnityAPI\Editor\BluetoothAPIPostProcessBuild.cs.meta" />
+    <None Include="Plugins\iOS\BluetoothUnityAPI\Source.meta" />
+    <None Include="Plugins\iOS\BluetoothUnityAPI\Source\BluetoothUnityAPI.framework.meta" />
+    <None Include="Plugins\iOS\BluetoothUnityAPI\Source\BluetoothUnityAPI.framework\BluetoothUnityAPI" />
+    <None Include="Plugins\iOS\BluetoothUnityAPI\Source\BluetoothUnityAPI.framework\BluetoothUnityAPI.meta" />
+    <None Include="Plugins\iOS\BluetoothUnityAPI\Source\BluetoothUnityAPI.framework\Headers.meta" />
+    <None Include="Plugins\iOS\BluetoothUnityAPI\Source\BluetoothUnityAPI.framework\Headers\BluetoothUnityAPI-Swift.h.meta" />
+    <None Include="Plugins\iOS\BluetoothUnityAPI\Source\BluetoothUnityAPI.framework\Headers\BluetoothUnityAPI.h.meta" />
+    <None Include="Plugins\iOS\BluetoothUnityAPI\Source\BluetoothUnityAPI.framework\Info.plist" />
+    <None Include="Plugins\iOS\BluetoothUnityAPI\Source\BluetoothUnityAPI.framework\Info.plist.meta" />
+    <None Include="Plugins\iOS\BluetoothUnityAPI\Source\BluetoothUnityAPI.framework\Modules.meta" />
+    <None Include="Plugins\iOS\BluetoothUnityAPI\Source\BluetoothUnityAPI.framework\Modules\BluetoothUnityAPI.swiftmodule.meta" />
+    <None Include="Plugins\iOS\BluetoothUnityAPI\Source\BluetoothUnityAPI.framework\Modules\BluetoothUnityAPI.swiftmodule\arm64-apple-ios.swiftdoc" />
+    <None Include="Plugins\iOS\BluetoothUnityAPI\Source\BluetoothUnityAPI.framework\Modules\BluetoothUnityAPI.swiftmodule\arm64-apple-ios.swiftdoc.meta" />
+    <None Include="Plugins\iOS\BluetoothUnityAPI\Source\BluetoothUnityAPI.framework\Modules\BluetoothUnityAPI.swiftmodule\arm64-apple-ios.swiftmodule" />
+    <None Include="Plugins\iOS\BluetoothUnityAPI\Source\BluetoothUnityAPI.framework\Modules\BluetoothUnityAPI.swiftmodule\arm64-apple-ios.swiftmodule.meta" />
+    <None Include="Plugins\iOS\BluetoothUnityAPI\Source\BluetoothUnityAPI.framework\Modules\BluetoothUnityAPI.swiftmodule\arm64.swiftdoc" />
+    <None Include="Plugins\iOS\BluetoothUnityAPI\Source\BluetoothUnityAPI.framework\Modules\BluetoothUnityAPI.swiftmodule\arm64.swiftdoc.meta" />
+    <None Include="Plugins\iOS\BluetoothUnityAPI\Source\BluetoothUnityAPI.framework\Modules\BluetoothUnityAPI.swiftmodule\arm64.swiftmodule" />
+    <None Include="Plugins\iOS\BluetoothUnityAPI\Source\BluetoothUnityAPI.framework\Modules\BluetoothUnityAPI.swiftmodule\arm64.swiftmodule.meta" />
+    <None Include="Plugins\iOS\BluetoothUnityAPI\Source\BluetoothUnityAPI.framework\Modules\BluetoothUnityAPI.swiftmodule\Project.meta" />
+    <None Include="Plugins\iOS\BluetoothUnityAPI\Source\BluetoothUnityAPI.framework\Modules\BluetoothUnityAPI.swiftmodule\Project\arm64-apple-ios.swiftsourceinfo" />
+    <None Include="Plugins\iOS\BluetoothUnityAPI\Source\BluetoothUnityAPI.framework\Modules\BluetoothUnityAPI.swiftmodule\Project\arm64-apple-ios.swiftsourceinfo.meta" />
+    <None Include="Plugins\iOS\BluetoothUnityAPI\Source\BluetoothUnityAPI.framework\Modules\BluetoothUnityAPI.swiftmodule\Project\arm64.swiftsourceinfo" />
+    <None Include="Plugins\iOS\BluetoothUnityAPI\Source\BluetoothUnityAPI.framework\Modules\BluetoothUnityAPI.swiftmodule\Project\arm64.swiftsourceinfo.meta" />
+    <None Include="Plugins\iOS\BluetoothUnityAPI\Source\BluetoothUnityAPI.framework\Modules\module.modulemap" />
+    <None Include="Plugins\iOS\BluetoothUnityAPI\Source\BluetoothUnityAPI.framework\Modules\module.modulemap.meta" />
+    <None Include="Plugins\WSA.meta" />
+    <None Include="Plugins\WSA\ArduinoBluetoothAPI.dll.meta" />
+    <None Include="Scenes.meta" />
+    <None Include="Scenes\SampleScene.unity" />
+    <None Include="Scenes\SampleScene.unity.meta" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BluetoothAPI\Samples\2 Scenes\Scene1.cs" />
+    <Compile Include="BluetoothAPI\Samples\2 Scenes\Scene2.cs" />
+    <Compile Include="BluetoothAPI\Samples\BLE\BLE.cs" />
+    <Compile Include="BluetoothAPI\Samples\Led On Off\LedOnOffManager.cs" />
+    <Compile Include="BluetoothAPI\Samples\Scan and Connect\ScanAndConnect.cs" />
+    <Compile Include="BluetoothAPI\Scripts\BLEServicesManager.cs" />
+    <Compile Include="BluetoothAPI\Scripts\BTManager.cs" />
+    <Compile Include="BluetoothAPI\Scripts\Demo.cs" />
+    <Compile Include="BluetoothAPI\Scripts\LedOnOff.cs" />
+    <Compile Include="BluetoothAPI\Scripts\manager.cs" />
+    <Compile Include="BluetoothAPI\Scripts\MyStreamManager.cs" />
+    <Compile Include="BluetoothAPI\Scripts\ScanScene2.cs" />
+    <Compile Include="BluetoothAPI\Scripts\ScanSceneManager.cs" />
+    <Compile Include="BluetoothAPI\Scripts\SphereContRot.cs" />
+    <Compile Include="btManager.cs" />
+    <Compile Include="Plugins\iOS\BluetoothUnityAPI\Editor\BluetoothAPIPostProcessBuild.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BluetoothAPI\changelogs.txt" />
+    <Content Include="BluetoothAPI\help.txt" />
+    <Content Include="BluetoothAPI\readme.txt" />
+    <Content Include="BluetoothAPI\Samples\BLE\characteristic.js.txt" />
+    <Content Include="BluetoothAPI\Samples\BLE\main.js.txt" />
+    <Content Include="BluetoothAPI\Samples\Led On Off\readme.txt" />
+    <Content Include="BluetoothAPI\wiring.png" />
+    <Content Include="Plugins\Android\AndroidManifest.xml" />
+    <Content Include="Plugins\Android\ArduinoBluetoothAPI.dll" />
+    <Content Include="Plugins\Android\classes.jar" />
+    <Content Include="Plugins\ArduinoBluetoothAPI.dll" />
+    <Content Include="Plugins\iOS\BluetoothUnityAPI\Source\BluetoothUnityAPI.framework\Headers\BluetoothUnityAPI-Swift.h" />
+    <Content Include="Plugins\iOS\BluetoothUnityAPI\Source\BluetoothUnityAPI.framework\Headers\BluetoothUnityAPI.h" />
+    <Content Include="Plugins\WSA\ArduinoBluetoothAPI.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
