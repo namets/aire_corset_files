@@ -3,7 +3,7 @@ import array as arr
 import pymongo
 
 # Create a connection to the MongoDB cloud
-myclient = pymongo.MongoClient("mongodb+srv://namets:jqX8Vk3tahkPNbsm@brace.nourj.mongodb.net/?retryWrites=true&w=majority", connect = False)
+myclient = pymongo.MongoClient("url", connect = False)
 mydb = myclient["sensor_data"]
 mycol = mydb["sensor_data"]
 
