@@ -1,0 +1,28 @@
+<ButtonApp>:
+    
+    main_text : main_text
+    
+    BoxLayout:
+        orientation: "vertical"
+        Label:
+            text: "The Magic Bluetooth Uploader!"
+            font_size: 50
+            color: 0, 0.62, 0.96
+
+        Label:
+            id: main_text
+            text: "-"
+            font_size: 45
+            background_color: (0, 0.5, 1 , 1)
+            canvas.before:
+				Color:
+					rgba: self.background_color
+                Rectangle:
+					size: self.size
+					pos: self.pos
+
+        Button:
+            text: "Upload"
+            font_size: 80
+            color: 0, 0.62, 0.96
+            on_press: root.pressed()
