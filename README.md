@@ -1,3 +1,6 @@
+--Update--
+The AIRE/buildozer folder contains the Android APK, buildozer and Kivy project files.
+
 # aire_corset_files
 AIRE smart scoliosis corset files
 
